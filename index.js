@@ -1,6 +1,6 @@
 'use strict';
 
-var data = module.exports = {
+const data = module.exports = {
   jquery: {
     versions: ['2.1.4', '2.1.3', '2.1.1', '2.1.0'],
     url: function (version) {
@@ -11,7 +11,7 @@ var data = module.exports = {
 
 // AngularJS
 
-var angularFiles = [
+const angularFiles = [
   'angular',
   'angular-animate',
   'angular-cookies',
@@ -23,7 +23,7 @@ var angularFiles = [
 ];
 
 angularFiles.forEach(function (item) {
-  var stableVersions = ['1.5.3', '1.5.2', '1.5.1', '1.5.0', '1.4.9', '1.4.8', '1.4.7', '1.4.6', '1.4.5', '1.4.4', '1.4.3', '1.4.2', '1.4.1', '1.4.0', '1.3.17', '1.3.16', '1.3.15'];
+  const stableVersions = ['1.5.5', '1.5.3', '1.5.2', '1.5.1', '1.5.0', '1.4.9', '1.4.8', '1.4.7', '1.4.6', '1.4.5', '1.4.4', '1.4.3', '1.4.2', '1.4.1', '1.4.0', '1.3.17', '1.3.16', '1.3.15'];
   data[item] = {
     versions: [].concat(stableVersions),
     url: function (version) {
@@ -31,3 +31,4 @@ angularFiles.forEach(function (item) {
     }
   };
 });
+
